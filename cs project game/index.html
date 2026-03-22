@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class = "topbar">
+    <div id="overlay" onclick="toggleMenu()"></div>
+    <div class = "topbar-left">
+      <div class = "hamburger" onclick = "toggleMenu()">&#9776;</div>
+        <div class = "nav-menu">
+          <a href="index.html">tasks</a> <!-- anchor tag (defines hyperlink) -->
+          <a href="plants.html">plants</a>
+          <a href="shop.html">shop</a>
+          <a href="profile.html">profile</a>
+        </div>
+    </div>
+
+    <div class = "topbar-middle">
+      <!--insert logo here-->
+      <img class="logo" src="images/bloomquest_logo.png" alt="logo">
+      <span>bloom quest</span>
+    </div>
+
+    <div class = "topbar-right"></div>
+
+  </div>
+
+  <div class="page-layout">
+
+
+  <div class = "left-side">
+    <h1> to-do list </h1>
+
+    <!-- auto resize text box and add task button function -->
+    <div class="textarea_container">
+      <textarea id = "task_input" class="auto_resize_textarea" placeholder = "enter a task"></textarea>
+      <button onclick = "add_task()" >add</button>
+      <p id = "button"></p>
+    </div>
+
+    <!-- progress bar -->
+    <div id="progress">0/0 complete</div>
+
+    <div id="progress-bar">
+      <div id="progress-fill"></div>
+    </div>
+
+    <!-- unordered list (of tasks) -->
+    <ul id = "task_list"></ul>
+  </div>
+
+
+  <div class = "middle">
+
+    <div class = "plant-card">
+      <p class="plant-title">current plant preview:</p>
+
+      <!-- flower image -->
+      <img id="flower" src="images/starter_0.png" alt="flower">
+      <p id = "tasks-to-grow"> complete tasks to grow your plant! </p>
+    </div>
+
+    <div class="quote-card">
+      <p id="quote-text">loading quote...</p>
+      <p class="author" id = "author-name"></p>
+
+    </div>
+
+  </div>
+
+
+  <div class = "right-side">
+    <div class = "stats-card">
+      <p id="xp-display">XP: 0</p>
+      <p id="level-display">level: 1</p>
+      <p id="coins-display">coins: 0</p>
+    </div>
+
+    <div class = "container">
+      <h1 class = "title">pomodoro timer</h1>
+      <p class="timer" id = "timer">25:00</p>
+      <div class = ".button-wrapper">
+        <button id = "start">start</button>
+        <button id = "stop">stop</button>
+        <button id = "reset">reset</button>
+      </div>
+    </div>
+
+  </div>
+    <body class="bg-index"></body>
+
+
+</div>
+
+
+<script src = "script.js"></script>
+</body>
+</html>

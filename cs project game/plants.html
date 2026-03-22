@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class = "topbar">
+    <div id="overlay" onclick="toggleMenu()"></div>
+    <div class = "topbar-left">
+      <div class = "hamburger" onclick = "toggleMenu()">&#9776;</div>
+        <div class = "nav-menu">
+          <a href="index.html">tasks</a> <!-- anchor tag (defines hyperlink) -->
+          <a href="plants.html">plants</a>
+          <a href="shop.html">shop</a>
+          <a href="profile.html">profile</a>
+        </div>
+    </div>
+
+    <div class = "topbar-middle">
+      <!--insert logo here-->
+      <img class="logo" src="images/bloomquest_logo.png" alt="logo">
+      <span>bloom quest</span>
+    </div>
+
+    <div class = "topbar-right"></div>
+
+  </div>
+
+  <div class = "plants-index-container">
+    <h2>my plants</h2>
+    <div id = "plant-gallery" class = "gallery-grid">
+
+    </div>
+  </div>
+  <body class = "bg-plants"></body>
+
+
+<script src = "script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class = "topbar">
+    <div id="overlay" onclick="toggleMenu()"></div>
+    <div class = "topbar-left">
+      <div class = "hamburger" onclick = "toggleMenu()">&#9776;</div>
+        <div class = "nav-menu">
+          <a href="index.html">tasks</a> <!-- anchor tag (defines hyperlink) -->
+          <a href="plants.html">plants</a>
+          <a href="shop.html">shop</a>
+          <a href="profile.html">profile</a>
+        </div>
+    </div>
+
+    <div class = "topbar-middle">
+      <!--insert logo here-->
+      <img class="logo" src="images/bloomquest_logo.png" alt="logo">
+      <span>bloom quest</span>
+    </div>
+
+    <div class = "topbar-right"></div>
+
+  </div>
+
+  <div class="profile-container">
+    <h1>profile</h1>
+    <div class="profile-card">
+      <p><strong>total plants grown:</strong> <span id = "total-plants">0</span></p>
+      <p><strong>coins:</strong> <span id = "profile-coins">0</span></p>
+      <p><strong>current level:</strong> <span id = "profile-level">1</span></p>
+      <p><strong>total xp:</strong> <span id = "profile-xp">0</span></p>
+    </div>
+  </div>
+  <body class="bg-profile"></body>
+
+<script src = "script.js"></script>
+
+</body>
+</html>
