@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class = "topbar">
+    <div id="overlay" onclick="toggleMenu()"></div>
+    <div class = "topbar-left">
+      <div class = "hamburger" onclick = "toggleMenu()">&#9776;</div>
+        <div class = "nav-menu">
+          <a href="index.html">tasks</a> <!-- anchor tag (defines hyperlink) -->
+          <a href="plants.html">plants</a>
+          <a href="shop.html">shop</a>
+          <a href="profile.html">profile</a>
+        </div>
+    </div>
+
+    <div class = "topbar-middle">
+      <!--insert logo here-->
+      <img class="logo" src="images/bloomquest_logo.png" alt="logo">
+      <span>bloom quest</span>
+    </div>
+
+    <div class = "topbar-right"></div>
+
+  </div>
+
+  <div class="shop-container">
+    <h2>plant shop</h2>
+
+    <p id = "shop-status"></p>
+
+    <div class = "shop-grid">
+
+      <div class = "plant-option">
+        <img id = "flower" src = "images/starter_3.png" class = "shop-plant-img">
+        <button id="buy-starter">buy tulip (10 coins) </button>
+      </div>
+
+      <div class = "plant-option">
+        <img id = "rose" src = "images/rose_4.png" class = "shop-plant-img">
+        <button id="buy-rose">buy rose (25 coins) </button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <body class="bg-shop"></body>
+
+
+
+<script src = "script.js"></script>
+
+</body>
+</html>
